@@ -1,0 +1,37 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    cert-manager.io/cluster-issuer: cluster-issuer-letsencrypt-prod
+    nginx.ingress.kubernetes.io/configuration-snippet: |
+      rewrite /manar https://manar.axolotlite.com permanent;
+    nginx.ingress.kubernetes.io/rewrite-target: /
+  name: portfolio-ingress
+spec:
+  ingressClassName: external-nginx
+  rules:
+  - host: manar.axolotlite.com
+    http:
+      paths:
+      - backend:
+          service:
+            name: react-portfolio-service
+            port:
+              number: 80
+        path: /
+        pathType: Prefix
+  - host: axolotlite.com
+    http:
+      paths:
+      - backend:
+          service:
+            name: react-portfolio-service
+            port:
+              number: 80
+        path: /manar
+        pathType: Prefix
+  tls:
+  - hosts:
+    - axolotlite.com
+    - manar.axolotlite.com
+    secretName: nginx-tls-axolotlite
