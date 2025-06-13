@@ -19,11 +19,6 @@ on:
 jobs:
   code-changes:
     name: Run Tests on Code Changes
-    if: |
-      contains(github.event.head_commit.message, 'src/') ||
-      contains(github.event.head_commit.message, 'public/') ||
-      contains(github.event.head_commit.message, 'package.json') ||
-      contains(github.event.head_commit.message, 'package-lock.json')
     runs-on: ubuntu-latest
 
     steps:
