@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   annotations:
     cert-manager.io/cluster-issuer: cluster-issuer-letsencrypt-prod
-  name: portfolio-ingress
+  name: manar-portfolio-ingress
 spec:
   ingressClassName: external-nginx
   rules:
