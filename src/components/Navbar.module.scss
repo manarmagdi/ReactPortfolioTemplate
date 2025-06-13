@@ -31,3 +31,56 @@ li {
 .link:hover {
   color: unset;
 }
+.link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.navText {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.initials {
+  font-size: 2.5rem;
+  font-weight: 900;
+  font-family: 'Segoe UI', 'Poppins', sans-serif;
+  padding: 0.3rem 1.2rem;
+  background: linear-gradient(135deg, #4c85ff, #5accd2);
+  color: white;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(37, 7, 88, 0.4);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.initials:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 14px rgba(255, 76, 96, 0.5);
+}
+
+.active {
+  border-bottom: 2px solid currentColor;
+}
+
+.dark {
+  background-color: #121212;
+  color: white;
+}
+
+.light {
+  background-color: white;
+  color: black;
+}

@@ -1,4 +1,4 @@
-import manar from "../img/manar.png"
+import self from "../img/self.png"
 import mock1 from "../img/mock1.png"
 import mock2 from "../img/mock2.png"
 
@@ -29,7 +29,7 @@ export const info = {
     lastName: "Magdy",
     initials: "M&m", // the example uses first and last, but feel free to use three or more if you like.
     position: "a Cloud DevOps Engineer",
-    selfPortrait: manar, // don't change this unless you want to name your self-portrait in the "img" folder something else!
+    selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
     gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
     baseColor: colors[0],
     miniBio: [ // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
@@ -51,11 +51,11 @@ export const info = {
         }
     ],
     socials: [
-        {
-            link: "https://facebook.cohttps://www.facebook.com/share/16ShFAjPQX/?mibextid=wwXIfrm",
-            icon: 'fa fa-facebook',
-            label: 'facebook'
-        },
+        // {
+        //     link: "https://facebook.cohttps://www.facebook.com/share/16ShFAjPQX/?mibextid=wwXIfrm",
+        //     icon: 'fa fa-facebook',
+        //     label: 'facebook'
+        // },
 
         {
             link: "https://github.com/manarmagdi",
@@ -63,7 +63,7 @@ export const info = {
             label: 'github'
         },
         {
-            link: "http://www.linkedin.com/in/manar-magdy-468923236com",
+            link: "http://www.linkedin.com/in/manar-magdy-468923236",
             icon: "fa fa-linkedin",
             label: 'linkedin'
         },
@@ -72,7 +72,7 @@ export const info = {
         // Just change the links so that they lead to your social profiles.
 
     ],
-    bio: "Hello! I'm Manar Magdy. I'm a Cloud DevOps Engineer with a passion for automation, scalability, and solving complex problems in the cloud. I earned my CKA certification and trained at ITI in Cloud Architecture, diving deep into DevOps, Linux, Kubernetes, and infrastructure-as-code. When I'm not building resilient systems, you’ll find me exploring the latest in AI or fine-tuning my personal projects. I believe the cloud isn’t the future — it’s the now. You should definitely hire me!",
+    bio: "Hi, I’m Manar Magdy — a CKA-certified Cloud DevOps Engineer passionate about automation, Kubernetes, and building scalable systems. Trained at ITI in Cloud Architecture, I love turning complex problems into clean solutions.",
     skills:
     {
         proficientWith: ['AWS', 'Azure', 'git', 'github', 'GitHub Actions', 'Ansible', 'Terraform', 'Kubernetes'],
@@ -99,19 +99,19 @@ export const info = {
         // Same as above, change the emojis to match / relate to your hobbies or interests.
         // You can also remove the emojis if you'd like, I just think they look cute :P
     ],
-    portfolio: [ // This is where your portfolio projects will be detailed
-        {
-            title: " 2-Tier Web App Deployment on AWS with Terraform and Docker",
-            live: "https://paytonpierce.dev", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-            source: "https://github.com/manarmagdi/AWS-Automation-with-Terraform", // this should be a link to the **repository** of the project, where the code is hosted.
-            image: mock1
-        },
-        {
-            title: "High Availability Database Cluster",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/manarmagdi/galera-cluster-setup",
-            image: mock2
-        },
+    // portfolio: [ // This is where your portfolio projects will be detailed
+    //     {
+    //         title: " 2-Tier Web App Deployment on AWS with Terraform and Docker",
+    //         live: "https://paytonpierce.dev", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+    //         source: "https://github.com/manarmagdi/AWS-Automation-with-Terraform", // this should be a link to the **repository** of the project, where the code is hosted.
+    //         image: mock1
+    //     },
+    //     {
+    //         title: "High Availability Database Cluster",
+    //         live: "https://paytonpierce.dev",
+    //         source: "https://github.com/manarmagdi/galera-cluster-setup",
+    //         image: mock2
+    //     },
 
-    ]
+    // ]
 }
